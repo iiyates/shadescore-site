@@ -46,3 +46,15 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 0 16
 ul.stadiums { list-style: none; padding: 0; columns: 2 260px; column-gap: 24px; }
 ul.stadiums li { break-inside: avoid; margin: 0 0 8px; }
 ul.stadiums .muted { display: block; font-size: 13px; }
+
+/* Landing page */
+main.wide { max-width: 980px; }
+.hero-actions { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.button.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
+.gallery { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(180px, 1fr); gap: 16px;
+  overflow-x: auto; scroll-snap-type: x mandatory; background: transparent; box-shadow: none; padding: 4px 2px 12px; }
+.gallery figure { margin: 0; scroll-snap-align: start; text-align: center; }
+.gallery img { width: 100%; border-radius: 26px; box-shadow: 0 10px 28px rgba(0,0,0,.18); display: block; }
+.gallery figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; }
+.ipad img { width: 100%; border-radius: 22px; box-shadow: 0 10px 28px rgba(0,0,0,.15); display: block; margin-top: 8px; }
+@media (max-width: 640px) { .gallery { grid-auto-columns: 62%; } }

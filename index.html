@@ -3,8 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ShadeScore Support</title>
-<meta name="description" content="ShadeScore tells you how much shade your stadium seat gets, and how hot it will feel.">
+<title>ShadeScore · Find the shade at your stadium</title>
+<meta name="description" content="ShadeScore tells you how much of the game your stadium seat spends in shade, how hot it will feel, and the UV, for 84 ballparks and football stadiums.">
+<link rel="canonical" href="https://shadescoreapp.com/">
+<meta property="og:title" content="ShadeScore · Find the shade at your stadium">
+<meta property="og:description" content="How much of the game your seat spends in shade, how hot it will feel, and the UV, for 84 stadiums.">
+<meta property="og:image" content="https://shadescoreapp.com/img/phone-03-score-chart.jpg">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,35 +17,57 @@
   <img src="icon.png" alt="ShadeScore app icon">
   <h1><span class="shade">Shade</span><span class="score">Score</span></h1>
   <p>What's the shade score of your seat?</p>
-  <nav><a href="./" aria-current="page">Support</a><a href="stadiums/">Shaded seats</a><a href="privacy.html">Privacy</a></nav>
+  <p class="hero-actions">
+    <a class="button" href="https://apps.apple.com/app/id6830477143">Get it on the App Store</a>
+    <a class="button ghost" href="try/">Try it in your browser</a>
+  </p>
+  <nav><a href="./" aria-current="page">Home</a><a href="try/">Try it</a><a href="stadiums/">Shaded seats</a><a href="privacy.html">Privacy</a></nav>
 </header>
-<main>
+<main class="wide">
+  <section class="gallery" aria-label="Screenshots">
+    <figure><img src="img/phone-03-score-chart.jpg" alt="ShadeScore showing 45% shade at Fenway Park with a temperature chart" loading="lazy"><figcaption>Your seat's shade score, and how hot it will feel</figcaption></figure>
+    <figure><img src="img/phone-06-satellite.jpg" alt="Satellite view of Fenway Park with sun and shade laid over the stands" loading="lazy"><figcaption>Shade laid over the real stadium</figcaption></figure>
+    <figure><img src="img/phone-05-map.jpg" alt="Stadium map coloured sun and shade partway through a game" loading="lazy"><figcaption>Watch the shade move through the game</figcaption></figure>
+    <figure><img src="img/phone-07-saved.jpg" alt="Saved games with their shade scores and countdowns" loading="lazy"><figcaption>Save your games and seats</figcaption></figure>
+  </section>
+
   <section>
     <h2>What ShadeScore does</h2>
-    <p>Pick a stadium, a start time and your seat. ShadeScore works out how much of the game
-    your seat spends in shade, what it will feel like, and the UV, for 84 ballparks and
-    football stadiums.</p>
-    <p><a class="button" href="https://apps.apple.com/app/id6830477143">Get ShadeScore on the App Store</a></p>
+    <p>Pick a stadium, a start time and your seat. ShadeScore works out where the sun will be
+    through the whole game and whether the stand across the field, the deck above you or the rows
+    behind you will block it. You get one number, how much of the game you'll spend in shade, plus
+    the air temperature, what your seat will feel like, and the UV.</p>
+    <ul>
+      <li>Type your section, row and seat, or tap the map</li>
+      <li>Press play and watch the shade sweep across the stands</li>
+      <li>See the coolest seats for your exact date and time</li>
+      <li>Save games, share your seat's score, and find the stadiums near you</li>
+      <li>All 30 ballparks, all 30 pro football stadiums and 24 college stadiums</li>
+    </ul>
   </section>
+
+  <section class="ipad">
+    <h2>On iPad too</h2>
+    <img src="img/ipad-score.jpg" alt="ShadeScore on iPad with choices on the left and the score and map on the right" loading="lazy">
+  </section>
+
   <section>
     <h2>Shaded seats at every stadium</h2>
-    <p>See where the shade falls at all 84 ballparks and football stadiums:
-    <a href="stadiums/">shade maps and the shadiest sections</a>.</p>
+    <p>Shade maps and the shadiest sections for all 84 ballparks and football stadiums:
+    <a href="stadiums/">find your stadium</a>.</p>
   </section>
-  <section>
-    <h2>Get in touch</h2>
+
+  <section id="support">
+    <h2>Support</h2>
     <p>Questions, a shade line that looks wrong, or a stadium you'd like added:
     <a href="mailto:shadescoreapp@gmail.com">shadescoreapp@gmail.com</a></p>
     <p class="muted">If a stadium looks off, tell me which one and roughly where you were sitting.
     It helps me fix the data.</p>
-  </section>
-  <section>
-    <h2>Good to know</h2>
     <ul>
       <li>Shade is worked out from a model of each stadium, so a result near 50% means the shade
       line will be close to your seat.</li>
-      <li>Weather is based on typical conditions for the date. You can type in the real forecast
-      under Weather for an exact answer.</li>
+      <li>Games in the next 10 days use a real forecast from Apple Weather where available; later
+      games use typical weather for the date. The app always says which.</li>
       <li>"Nearest to me" uses your approximate location once, on your phone. It's never sent anywhere.</li>
       <li>UV figures are general guidance, not medical advice.</li>
     </ul>
