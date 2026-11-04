@@ -32,3 +32,17 @@ p, li { margin: 6px 0; } ul { padding-left: 20px; }
 a { color: var(--shade); }
 .muted { color: var(--muted); font-size: 15px; }
 footer { text-align: center; color: var(--muted); font-size: 13px; padding: 0 16px 40px; }
+
+.map svg { width: 100%; height: auto; display: block; }
+.legend { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); margin-top: 10px; }
+.legend span { display: inline-block; width: 14px; height: 14px; border-radius: 4px; }
+.legend .sun { background: rgb(243,200,126); } .legend .shade { background: rgb(159,195,202); }
+.legend .grad { width: 80px; background: linear-gradient(90deg, rgb(243,200,126), rgb(159,195,202)); }
+.cta { text-align: center; }
+.button { display: inline-block; background: var(--shade); color: #fff; text-decoration: none;
+  font-weight: 700; padding: 12px 22px; border-radius: 999px; }
+@media (prefers-color-scheme: dark) { .button { color: #0b1a1f; } }
+.small { font-size: 13px; padding: 0 6px; }
+ul.stadiums { list-style: none; padding: 0; columns: 2 260px; column-gap: 24px; }
+ul.stadiums li { break-inside: avoid; margin: 0 0 8px; }
+ul.stadiums .muted { display: block; font-size: 13px; }
